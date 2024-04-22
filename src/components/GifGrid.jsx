@@ -1,6 +1,8 @@
+import { getGifs } from "../helpers/getDifs"
 
-export const GifGrid = ( {category }) => {
+export const GifGrid = ( { category } ) => {
 
+  getGifs(category)
 
 
   return (

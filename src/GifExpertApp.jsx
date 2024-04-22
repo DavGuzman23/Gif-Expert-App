@@ -12,9 +12,8 @@ const GifExpertApp = () => {
   const onAddCategory = (newCategory) => {
 
     if ( categories.includes( newCategory ) ) return;
-    
     setCategories([newCategory, ...categories])
-    //setCategories([ 'Valorant' , ...categories ]);
+
 }
 
   return (
@@ -25,7 +24,6 @@ const GifExpertApp = () => {
 
         {/* input */}
         <AddCategory 
-          // setCategories = { (event) => setCategories(event) } 
           onNewCategory = { onAddCategory }
         />
 
